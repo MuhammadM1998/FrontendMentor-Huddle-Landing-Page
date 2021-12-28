@@ -1,0 +1,91 @@
+/*** Desktop [First] ***/
+body {
+	background-image: url('../images/bg-desktop.svg');
+	background-size: cover;
+	background-color: $violet;
+}
+
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+.intro {
+	margin-top: 4em;
+	display: flex;
+	gap: 3em;
+	align-items: center;
+
+	.hero {
+		flex-basis: 55%;
+	}
+
+	.content {
+		flex-basis: 45%;
+		color: white;
+
+		&__main-heading {
+			font-family: $headings;
+			line-height: 1.5;
+			font-size: 2.5em;
+			font-weight: 600;
+		}
+
+		&__sub-heading {
+			font-family: $headings;
+			font-weight: 300;
+			margin-top: 1.25em;
+			line-height: 1.6;
+		}
+
+		&__submit {
+			margin-top: 1.25em;
+			cursor: pointer;
+			padding: 1em 4em;
+			border-radius: 100vh;
+			border: none;
+			color: $violet;
+			box-shadow: 0px 3px 1em 0px #00000080;
+
+			&:hover {
+				color: white;
+				background-color: $soft-magenta;
+			}
+		}
+	}
+}
+
+.footer-social {
+	margin-top: 2em;
+	.social-links {
+		display: flex;
+		justify-content: flex-end;
+		gap: 3em;
+
+		.social-link a {
+			text-decoration: none;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 2em;
+			height: 2em;
+			border: 1px solid white;
+			border-radius: 50%;
+
+			i {
+				display: block;
+				color: white;
+			}
+
+			&:hover {
+				border-color: $soft-magenta;
+
+				i {
+					color: $soft-magenta;
+				}
+			}
+		}
+	}
+}

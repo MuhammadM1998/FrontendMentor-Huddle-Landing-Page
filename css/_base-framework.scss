@@ -1,0 +1,16 @@
+// * My Variables
+$transition-duration: 0.4s;
+
+// * Colors
+$violet: hsl(257, 40%, 49%);
+$soft-magenta: hsl(300, 69%, 71%);
+
+// * Typography
+$headings: 'Poppins', sans-serif; // [400,600]
+$body: 'Open Sans', sans-serif; // [400]
+
+body {
+	font-family: $body;
+	font-weight: 400;
+	font-size: 16px;
+}
